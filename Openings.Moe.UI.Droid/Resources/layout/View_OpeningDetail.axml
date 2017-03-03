@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+  <VideoView
+    android:id="@+id/videoView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="VideoUri Uri"
+    />
+  
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="Text Detail.Title"
+    />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="Text Detail.Source"
+    />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="Text Detail.Filename"
+    />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="Text Detail.Song.Title"
+    />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="Text Detail.Song.Artist"
+    />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="Text Detail.Subtitles"
+    />
+</LinearLayout>
